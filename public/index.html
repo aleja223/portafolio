@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alejandra León - Desarrollador Web</title>
+   <link rel="stylesheet" href="/public/css/styles.css" />
+
+   
+  </head>
+  <body>
+    <div class="encabezado-contenedor">
+      <header>
+        <div class="enlaces-menu">
+          <a href="#" id="enlaceInicio">Inicio</a>
+          <a href="#" id="enlaceSobreMi">Sobre Mí</a>
+          <a href="#" id="enlaceProyectos">Proyectos</a>
+          
+        </div>
+        <ul class="redes-sociales">
+          <li>
+            <a href="https://drive.google.com/file/d/10O5Qb-XHNEaZBesjj_J1hpiluxxknV3N/view?usp=sharing" target="_blank">
+              <img src="/public/img/cv-logo.png" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/b-alejandra-león-pérez" target="_blank">
+              <img src="/public/img/linkedin-logo.png" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/aleja223" target="_blank">
+              <img src="/public/img/github-logo.jfif" alt="GitHub" />
+            </a>
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <section id="inicio" class="contenedor-seccion">
+      <div class="imagen-circular">
+        <img src="/public/img/imagen-ale.jpg" alt="Alejandra Leon" />
+        <div class="nombre">Alejandra León</div>
+       <div class="descripcion">Full-Stack Web Developer</div>
+      </div>
+    </section>
+
+   <section id="sobre-mi" class="contenedor-seccion">
+     <div class="informacion-sobre-mi">
+      <div class="texto-sobre-mi">
+  <p>Soy desarrolladora Web Full Stack con formación en derecho. He procurado dirigir mi pasión por los retos y la resolución de problemas hacia el emocionante universo de la tecnología. Cada desafío se ha convertido en una oportunidad de aprendizaje constante.</p>
+  <p>Creo firmemente en la importancia de la empatía y la responsabilidad en el trabajo. Enfrentar desafíos tecnológicos me llena de emoción, ya que cada problema es una oportunidad para aprender y crecer, algo que abrazo con entusiasmo.</p>
+  <p>Me gusta la idea de contribuir a proyectos que aprovechen la tecnología para marcar la diferencia. ¡Me encantaría ser parte de tu equipo! Contactame</p>
+</div>
+  </div>
+              <div class="tecnologias-lista">
+              <h2>Tecnologías</h2>
+              <div class="tecnologias-lista">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                  <img
+                    src="https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript"
+                    alt="JavaScript" />
+                </a>
+                <a href="https://nodejs.org">
+                  <img
+                    src="https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js"
+                    alt="Node.js" />
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                  <img
+                    src="https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5"
+                    alt="HTML" />
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                  <img
+                    src="https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6"
+                    alt="CSS" />
+                </a>
+                <a href="https://reactjs.org">
+                  <img
+                    src="https://img.shields.io/badge/-React-05122A?style=flat&logo=react"
+                    alt="React" />
+                </a>
+                <a href="https://redux.js.org">
+                  <img
+                    src="https://img.shields.io/badge/-Redux-05122A?style=flat&logo=redux"
+                    alt="Redux" />
+                </a>
+                <a href="https://www.postgresql.org">
+                  <img
+                    src="https://img.shields.io/badge/-PostgreSQL-05122A?style=flat&logo=postgresql"
+                    alt="PostgreSQL" />
+                </a>
+                <a href="https://expressjs.com">
+                  <img
+                    src="https://img.shields.io/badge/-Express-05122A?style=flat&logo=express"
+                    alt="Express" />
+                </a>
+              </div>
+            </div>
+         
+    </section>
+
+    <section id="proyectos" class="proyectos-contenedor">
+      <!-- Proyecto 1 -->
+      <div class="proyecto" id="proyecto1">
+        <div class="galeria-proyecto">
+          <img src="/public/img/proyecto1.png" alt="Proyecto 1" />
+        </div>
+        <div class="info-proyecto">
+          <h3>Trendy-Tech</h3>
+           <button class="ver-mas-modal" data-proyecto="proyecto1">Ver más</button>
+          <div class="modal" id="modal-proyecto1">
+            <div class="modal-contenido">
+              <span class="cerrar-modal" onclick="cerrarModal('proyecto1')"
+                >&times;</span
+              >
+              <h3>Detalles de Trendy-Tech</h3>
+              <p>TrendyTech es un e-commerce de productos de computación.</p>
+              <p>
+               Incluye registro, confirmación, autenticación, reseteo de contraseñas,
+                autenticación de terceros con Google, pasarela de pagos con
+                Mercado Pago, Dashboard de admin, borrado lógico, cookies. Como
+                administrador puedes crear, editar y eliminar las propiedades de
+                cada producto en venta, banear y restringir a los usuarios que
+                atenten con las políticas normativas, ver el flujo de ventas.
+                Como usuario debes registrarte o logearte con Google para poder
+                concretar una compra, puedes añadir productos a "favoritos",
+                puedes puntuar tu compra y editar tu perfil.
+              </p>
+              <p>
+                Tecnologías aplicadas: JavaScript, React, CSS, NodeJS, Express, Sequelize,
+                PostgreSQL, Nodemailer, Mercado Pago, Cloudinary.
+              </p>
+               <button class="ver-proyecto" onclick="verProyecto('https://trendy-tech.onrender.com')">Ver Proyecto</button>
+    <button class="ver-frontend" onclick="verCodigo('https://github.com/Rey5440/TrendyTech-Front')">Código Frontend</button>
+    <button class="ver-backend" onclick="verCodigo('https://github.com/Rey5440/TrendyTech-Back')">Código Backend</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="proyecto" id="proyecto2">
+        <div class="galeria-proyecto">
+          <img src="/public/img/proyecto2.png" alt="Proyecto 2" />
+        </div>
+        <div class="info-proyecto">
+          <h3>Henry Food</h3>
+       <button class="ver-mas-modal" data-proyecto="proyecto2">Ver más</button>
+         <div class="modal" id="modal-proyecto2">
+            <div class="modal-contenido">
+              <span class="cerrar-modal" onclick="cerrarModal('proyecto2')"
+                >&times;</span
+              >
+              <h3>Detalles de Henry Food</h3>
+              <p>
+                Single page application que consume la API “FoodApi”. Permite la
+                visualización de la información de las recetas de comida, ver a
+                detalle cada una, filtrarlas, ordenarlas, crear nuevas y
+                buscarlas por su nombre.
+              </p>
+              <!-- Más detalles del Proyecto 2 -->
+              <p>
+                Tecnologías aplicadas: JavaScript, React, Redux, HTML, CSS, PostgreSQL,
+                Sequelize, Express, NodeJS.
+              </p>
+               <button class="ver-Github" onclick="verCodigo('https://github.com/aleja223/PI-Food')">Enlace a Github</button>
+              <a href="" target="_blank"
+                
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+</section> 
+  
+      
+    <footer style="display: block;">
+      <p>&copy; 2024.Todos los derechos reservados.</p>
+      <ul class="redes-sociales">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/b-alejandra-león-pérez"
+            target="_blank">
+            <img src="/public/img/linkedin-logo.png" alt="LinkedIn" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/aleja223" target="_blank">
+            <img src="/public/img/github-logo.jfif" alt="GitHub" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+    
+     <div class="modal fade" id="modal-proyecto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detalles del Proyecto</h5>
+        <button type="button" class="close cerrar-modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-contenido"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Tu script.js -->
+<script src="/public/script.js" defer></script>
+  </body>
+</html>
